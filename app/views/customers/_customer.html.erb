@@ -1,13 +1,7 @@
-<h1>All Customers</h1>
-
-<%= link_to 'New Customer', new_customer_path %> - <%= link_to 'Missing Emails', missing_email_path %>
-
-<% @customers.each do |c| %>
-    <div id="customer">
-        <h2><%= c.full_name %></h2>
-        <%= image_tag c.image %>
-        <b>Phone: </b><%= c.phone_number %>
-        <b>Email: </b><%= c.email_address %>
-        <b>Notes: </b><%= c.notes %>
-    </div>
-<% end %>
+<div id="customer">
+    <h2><%= customer.full_name %></h2>
+    <%= image_tag customer.image %>
+    <b>Phone: </b><%= customer.phone_number %>
+    <b>Email: </b><%= customer.email_address %>
+    <b>Notes: </b><%= customer.notes %>
+</div>

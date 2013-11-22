@@ -1,0 +1,7 @@
+<h1>Customers Missing Email</h1>
+
+<%= render @customers %>
+
+<% @customers.each do |c| %>
+    <%= c.full_name %> - <%= link_to 'Edit', edit_customer_path(c) %>
+<% end %>
